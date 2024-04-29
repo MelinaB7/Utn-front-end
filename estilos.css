@@ -1,15 +1,50 @@
-h1 {
-    color: brown;
+* {
+    margin: 0;
+    padding: 0;
 }
-h2 {
-    color: rgb(20, 73, 20);
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body{
+    background-color: rgb(29, 28, 28);
+}
+
+nav ul li{
+    color: white;
+    border: solid 5px;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+p{
+    color: white;
+    margin: 10px;
 }
 ul{
-    color: rgb(132, 32, 32);
+    color:rgb(235, 200, 44);
+    margin: 30px;
 }
 ol{
-    color: rgb(174, 106, 238);
+    color: rgb(235, 200, 44);
+    margin: 30px;
 }
 .titulo{
-    color:rgb(14, 14, 145);
+    color: white;
+    margin:10px;
+}
+#encabezado {
+    background-color: rgb(235, 200, 44);
+}
+h1{
+    color: white;
+    font-family: "Oswald", sans-serif;
+    margin-left: 10px;
+}
+
+.boxModel{
+    background-color: rgb(235, 200, 44);
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+    margin: 10px;
+    color:beige;
+    border: solid 5px;
 }
