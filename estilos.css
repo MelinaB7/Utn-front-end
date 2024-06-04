@@ -3,48 +3,173 @@
     padding: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
 body{
-    background-color: rgb(29, 28, 28);
+    background: rgb(2,0,36);
+    background: linear-gradient(5deg, rgba(2,0,36,1) 0%, rgba(142,141,168,1) 0%, rgba(85,193,200,1) 0%, rgba(47,4,107,1) 100%, rgba(91,64,244,1) 100%);}
+
+header{
+    height: 60px;
+    width: 100%;
+    display: flex; /* Agregado para centrar contenido */
+    align-items: center; /* Agregado para centrar contenido */
+    justify-content: center; /* Agregado para centrar contenido */
 }
 
-nav ul li{
+    
+    .barra ul li{
+    
+        font-family: "Merriweather", serif;
+        display: inline-block;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    
+    .barra a {
+        text-decoration: none;
+        color: white;  
+        list-style: none;
+        margin-right: 20px;
+        padding: 10px 20px;
+        display: block;
+        width: 100%;
+    
+    }
+
+    .barra a:hover {
+        color: rgb(249, 118, 212);
+    }
+    
+
+.img{
+    height: auto;
+    width: 90%;
+    border-radius: 40px;
+    display: block;
+    margin: 30px auto;
+}
+
+h3{
     color: white;
-    border: solid 5px;
-    display: inline-block;
+    font-family: "Freeman", sans-serif;
+}
+
+.grupoForm{
+
+    padding: 15px;
+    border: none;
+    text-align: center;
+    align-items: center;
+    color:white;
+    width: 90%;
+    margin: 10px auto;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #b867bf;
+    color: white;
     padding: 10px;
-    margin: 5px;
-}
-p{
-    color: white;
-    margin: 10px;
-}
-ul{
-    color:rgb(235, 200, 44);
-    margin: 30px;
-}
-ol{
-    color: rgb(235, 200, 44);
-    margin: 30px;
-}
-.titulo{
-    color: white;
-    margin:10px;
-}
-#encabezado {
-    background-color: rgb(235, 200, 44);
-}
-h1{
-    color: white;
-    font-family: "Oswald", sans-serif;
-    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.boxModel{
-    background-color: rgb(235, 200, 44);
-    width: 250px;
-    height: 150px;
-    padding: 20px;
-    margin: 10px;
-    color:beige;
-    border: solid 5px;
+#boton :hover{
+    background-color: rgb(138, 86, 186);
+}
+
+.celda{
+    transition: transform 0.3s ease; 
+}
+
+.celda:hover {
+    transform: scale(1.1); 
+}
+@media (min-width:600px) {
+    .barra ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .barra ul li {
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+    .img {
+        width: 80%;
+    }
+
+    .grupoForm {
+        width: 80%;
+    }
+}
+
+@media (min-width:900px){
+    .barra ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .barra ul li {
+        margin: 0 15px;
+        font-size: 26px;
+    }
+
+    .img {
+        width: 60%;
+    }
+
+    .grupoForm {
+        width: 60%;
+    }
+}
+
+footer{
+    background-color: #0b0b0b;
+    text-align: center;
+    height: 20px;
+    color:white;
+    padding: 30px 0;
+
+}
+.texto {
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+
+.contenedorFoto{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    
+}
+.imagenperfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    border: 2px solid #ccc; 
 }
