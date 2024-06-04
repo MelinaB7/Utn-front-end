@@ -18,38 +18,7 @@ header{
     justify-content: center; /* Agregado para centrar contenido */
 }
 
-    
-    .barra ul li{
-    
-        font-family: "Merriweather", serif;
-        display: inline-block;
-        margin: 10px 0;
-        font-size: 16px;
-    }
-    
-    .barra a {
-        text-decoration: none;
-        color: white;  
-        list-style: none;
-        margin-right: 20px;
-        padding: 10px 20px;
-        display: block;
-        width: 100%;
-    
-    }
 
-    .barra a:hover {
-        color: rgb(249, 118, 212);
-    }
-    
-
-.img{
-    height: auto;
-    width: 90%;
-    border-radius: 40px;
-    display: block;
-    margin: 30px auto;
-}
 
 h3{
     color: white;
@@ -72,6 +41,26 @@ label{
     margin-bottom: 5px;
 }
 
+
+.texto {
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+
+.contenedorFoto{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    
+}
+.imagenperfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    border: 2px solid #ccc; 
+}
 
 input[type="text"],
 input[type="email"],
@@ -106,45 +95,6 @@ input[type="submit"] {
 .celda:hover {
     transform: scale(1.1); 
 }
-@media (min-width:600px) {
-    .barra ul {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .barra ul li {
-        margin: 0 10px;
-        font-size: 20px;
-    }
-
-    .img {
-        width: 80%;
-    }
-
-    .grupoForm {
-        width: 80%;
-    }
-}
-
-@media (min-width:900px){
-    .barra ul {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    .barra ul li {
-        margin: 0 15px;
-        font-size: 26px;
-    }
-
-    .img {
-        width: 60%;
-    }
-
-    .grupoForm {
-        width: 60%;
-    }
-}
 
 footer{
     background-color: #0b0b0b;
@@ -154,22 +104,23 @@ footer{
     padding: 30px 0;
 
 }
-.texto {
-    color: white;
-    text-align: center;
-    margin: 30px;
+
+@media (min-width:600px) {
+
+    .grupoForm {
+        width: 80%;
+    }
+    .texto{
+        font-size: 20px;
+    }
 }
 
-.contenedorFoto{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center; 
-    width: 100%;
-    
-}
-.imagenperfil{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%; 
-    border: 2px solid #ccc; 
+@media (min-width:900px){
+
+    .grupoForm {
+        width: 60%;
+    }
+    .texto{
+        font-size: 25px;
+    }
 }
